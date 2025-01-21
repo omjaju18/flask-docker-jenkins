@@ -1,8 +1,6 @@
 pipeline {
-    agent {
-        label "docker-node" // Ensures the pipeline runs on a node labeled "docker-node"
-    }
-
+    agent any 
+    
     stages {
         stage("Checkout") {
             steps { 
