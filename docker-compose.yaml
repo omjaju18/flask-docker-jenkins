@@ -1,0 +1,11 @@
+services:
+  python:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: python
+
+    ports:
+     - "8081:80"
+    volumes:
+      - .:/app 
